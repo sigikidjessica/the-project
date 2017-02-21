@@ -1,11 +1,21 @@
+$headline-color: $primary-color !default;
+$headline-secondary-color: $secondary-color !default;
+$headline-size: 60px !default;
+$headline-font-family: 'Amarillo', serif !default;
+
+@include font-face('Amarillo', '../fonts/Amarillo');
+
 h1 {
-  font-size: 45px;
+  font-size: $headline-size;
+  font-family: $headline-font-family;
 }
 
 h2 {
-  color: $primary-color;
+  color: darken($headline-color, 30%);
+  font-size: $headline-size / 2;
 }
 
 h3 {
-  color: red;
+  color: $headline-secondary-color;
+  font-size: $headline-size / 3;
 }

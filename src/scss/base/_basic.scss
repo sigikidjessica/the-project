@@ -1,3 +1,7 @@
+// Farben
+$primary-color: #5af034 !default;
+$secondary-color: #ad1a90 !default;
+
 body {
-  background: yellowgreen;
+  background: $primary-color;
 }
