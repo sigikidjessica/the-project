@@ -1,7 +1,7 @@
 # Installation
 
 1. Repository klonen:
-```https://github.com/sigikidjessica/the-project.git```
+https://github.com/sigikidjessica/the-project.git
 
 2. Node.js Installieren (nur einmal pro PC notwendig)
 
