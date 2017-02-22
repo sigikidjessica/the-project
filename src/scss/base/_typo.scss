@@ -1,9 +1,11 @@
 $headline-color: $primary-color !default;
 $headline-secondary-color: $secondary-color !default;
 $headline-size: 60px !default;
-$headline-font-family: 'Amarillo', serif !default;
+$headline-font-family: 'Amarillo' !default;
+$text-family: 'KING' !default;
 
 @include font-face('Amarillo', '../fonts/Amarillo');
+@include font-face ('KING', '../fonts/KING');
 
 h1 {
   font-size: $headline-size;
@@ -13,6 +15,7 @@ h1 {
 h2 {
   color: darken($headline-color, 30%);
   font-size: $headline-size / 2;
+  font-family: $text-family;
 }
 
 h3 {
