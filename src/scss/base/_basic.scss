@@ -1,7 +1,19 @@
 // Farben
-$primary-color: #5af034 !default;
-$secondary-color: #ad1a90 !default;
+$primary-color: #a9dca7 !default;
+$secondary-color: #4fb7b7 !default;
+$background-color: #393939 !default;
+
+// Text
+$font-color: #ffffff !default;
+$marked-text: $secondary-color !default;
 
 body {
-  background: $primary-color;
+  background: $background-color;
+}
+
+// Button / CTA
+a,
+button {
+  color: $secondary-color;
+  display: block;
 }
