@@ -1,0 +1,12 @@
+// Button / CTA
+a,
+button {
+  color: $secondary-color;
+  display: block;
+  text-decoration: none;
+  border: 2px solid $secondary-color;
+}
+
+button:hover {
+  background-color: white;
+}

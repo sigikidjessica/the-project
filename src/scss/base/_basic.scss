@@ -1,6 +1,7 @@
 // Farben
 $primary-color: #a9dca7 !default;
 $secondary-color: #4fb7b7 !default;
+$unknown-name: #cccc77 !default;
 $background-color: #393939 !default;
 
 // Text
@@ -11,9 +12,3 @@ body {
   background: $background-color;
 }
 
-// Button / CTA
-a,
-button {
-  color: $secondary-color;
-  display: block;
-}
