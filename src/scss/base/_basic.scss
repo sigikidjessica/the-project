@@ -1,7 +1,8 @@
 // Farben
 $primary-color: #a9dca7 !default;
 $secondary-color: #4fb7b7 !default;
-$unknown-name: #cccc77 !default;
+$marker-color: #cccc77 !default;
+
 $background-color: #393939 !default;
 
 // Text
@@ -11,4 +12,11 @@ $marked-text: $secondary-color !default;
 body {
   background: $background-color;
 }
+
+.row {
+  display: block;
+  float: left;
+  margin: 0 14px 0 0;
+}
+
 

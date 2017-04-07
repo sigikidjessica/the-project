@@ -5,7 +5,6 @@
 <head>
 
     <meta charset="utf-8">
-
     <title>#Projekt - Styleguide</title>
     <link rel="stylesheet" href="dist/css/app.css" type="text/css" media="all" />
 
@@ -15,7 +14,6 @@
 <body>
 
 <!-- Das ist ein einfacher Absatz -->
-<p>Hallo schöne neue HTML Welt!</p>
 
 <h1>Headline 1</h1>
 <h2>Headline 2</h2>
@@ -24,24 +22,62 @@
 <h5>Headline 5</h5>
 <h6>Headline 6</h6>
 
+<div class="header">
+    <img alt="Logo Rietz" src="file:///C:/Users/Rietz/Desktop/%23Projekt/Styleguide/logo_white.png"/>
+
+    <div class="navigation">
+        <button>Home</button>
+        <button>Portfolio</button>
+        <button>Blog</button>
+        <button>About</button>
+    </div>
+
+</div>
+
 <!-- ARTIKEL -->
-<article class="article-outer">
+<article>
 
-    <div class="article-inner">
+    <header>
+        <h2 class="article-headline">Ich bin eine H2</h2>
+    </header>
 
-        <h3 class="article-headline">blaaa</h3>
-        <p>Ich bin ein stinknormaler Text</p>
-
+    <div>
+        <p>Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+         Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
     </div>
 
-    <div class="menu large-3">
-        <a href="#" class="menu-button">Home</a>
-        <a href="#" class="menu-button">Portfolio</a>
-        <a href="#" class="menu-button">Blog</a>
-        <a href="#" class="menu-button">About</a>
-    </div>
+    <footer>
+
+        <div class="wrapper mod--tags">
+
+            <dl class="tag-list">
+                <dt>Tags</dt>
+                <dd><a class="button article-button" href="#">2016</a></dd>
+                <dd><a class="button article-button" href="#">2017</a></dd>
+            </dl>
+
+            <dl class="tag-list">
+                <dt>Category</dt>
+                <dd><a class="button article-button" href="#">2016</a></dd>
+                <dd><a class="button article-button" href="#">2017</a></dd>
+            </dl>
+
+            <dl class="tag-list">
+                <dt>Author</dt>
+                <dd><a class="button article-button" href="#">2016</a></dd>
+                <dd><a class="button article-button" href="#">2017</a></dd>
+            </dl>
+
+            <dl class="tag-list">
+                <dt>Date</dt>
+                <dd><a class="button article-button" href="#"> 07.04.2017</a></dd>
+            </dl>
+        </div>
+
+    </footer>
 
 </article>
+
 <!-- ARTIKEL ENDE -->
 
 </body>
