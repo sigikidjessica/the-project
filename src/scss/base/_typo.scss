@@ -15,7 +15,7 @@ $text-color: $font-color !default;
 
 
 body {
-  color: $font-color;
+  color: $text-color;
   font-family: $primary-font;
   font-size: $text-size;
 }
@@ -61,6 +61,11 @@ a {
   font-family: $primary-font;
   font-size: $text-size;
   background-color: transparent;
+  text-decoration: none;
+}
+
+p {
+  padding: 14px 0 14px 0;
 }
 
 ::selection {

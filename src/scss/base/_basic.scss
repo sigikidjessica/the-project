@@ -3,7 +3,7 @@ $primary-color: #a9dca7 !default;
 $secondary-color: #4fb7b7 !default;
 $marker-color: #cccc77 !default;
 
-$background-color: #393939 !default;
+$background-color: #191919 !default;
 
 // Text
 $font-color: #ffffff !default;
@@ -16,7 +16,22 @@ body {
 .row {
   display: block;
   float: left;
-  margin: 0 14px 0 0;
+  margin: 1% 2% 1% 2%;
 }
 
+.blog-size {
+  display: block;
+  float: left;
+  width: 60%;
+}
 
+.logo {
+
+  img {
+    float: left;
+  }
+}
+
+.article-headline {
+  text-align: center;
+}
