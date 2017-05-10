@@ -1,13 +1,18 @@
 $headline-color: $primary-color !default;
 $headline-secondary-color: $secondary-color !default;
-$headline-size: 42px !default;
-$headline-font-family: 'blackjack' !default;
+
+// Headline:
+$headline-size: 48px !default;
+$headline-font: 'blackjack' !default;
+
+// Text:
+$text-size: 16px !default;
 $primary-font: 'KING' !default;
 $font-test: 'Pacifico' !default;
-$font-test_2: 'blackjack' !default;
-$text-size: 16px !default;
 $text-color: $font-color !default;
 
+
+// Schriftarten:
 @include font-face ('Amarillo', '../fonts/Amarillo');
 @include font-face ('KING', '../fonts/KING');
 @include font-face ('Pacifico', '../fonts/Pacifico');
@@ -22,38 +27,44 @@ body {
 
 h1 {
   color: $headline-color;
-  font-size: $headline-size;
-  font-family: $headline-font-family;
+  font-size: 50px;
+  font-family: $headline-font;
+  margin: 10px;
 }
 
 h2 {
   color: ($headline-color);
-  font-size: 34px;
-  font-family: $headline-font-family;
+  font-size: 42px;
+  font-family: $headline-font;
+  margin: 10px;
 }
 
 h3 {
   color: $headline-color;
-  font-size: 30px;
-  font-family: $headline-font-family;
+  font-size: 36px;
+  font-family: $headline-font;
+  margin: 10px;
 }
 
 h4 {
   color: $headline-color;
   font-size: 28px;
-  font-family: $headline-font-family;
+  font-family: $headline-font;
+  margin: 10px;
 }
 
 h5 {
   color: $headline-color;
   font-size: 25px;
-  font-family: $headline-font-family;
+  font-family: $headline-font;
+  margin: 10px;
 }
 
 h6 {
   color: $headline-color;
   font-size: 23px;
-  font-family: $headline-font-family;
+  font-family: $headline-font;
+  margin: 10px;
 }
 
 a {
@@ -71,4 +82,14 @@ p {
 ::selection {
   color: #ffffff;
   background: #ffffb8;
+}
+
+// blog-uebersicht //
+
+.blog-header {
+  text-align: center;
+
+  h3 {
+    margin: 10px;
+  }
 }

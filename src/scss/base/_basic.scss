@@ -1,37 +1,85 @@
-// Farben
+// Farben:
 $primary-color: #a9dca7 !default;
 $secondary-color: #4fb7b7 !default;
 $marker-color: #cccc77 !default;
 
+// Farben: Hintergrund
 $background-color: #191919 !default;
+$secondary-background-color: #2a2a2a !default;
 
-// Text
+// Farben: Button
+$hover-background-color: #526051 !default;
+
+// Farben: Text
 $font-color: #ffffff !default;
 $marked-text: $secondary-color !default;
+
 
 body {
   background: $background-color;
 }
 
-.row {
-  display: block;
-  float: left;
-  margin: 1% 2% 1% 2%;
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.blog-size {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
   display: block;
-  float: left;
-  width: 60%;
+  margin: 1% 2% 1% 2%;
+  overflow: hidden;
 }
 
 .logo {
+  display: block;
+  float: left;
+}
 
-  img {
-    float: left;
-  }
+.super-geile-mega-krasse-image-wrapper-klasse {
+  text-align: center;
 }
 
 .article-headline {
   text-align: center;
 }
+
+.image--wrapper {
+  overflow: hidden;
+}
+
+.inner-content {
+  padding: 0 20px 20px;
+}
+
+// blog start //
+.wrapper--blog {
+  transition: background 400ms cubic-bezier(0.5, 0.25, 0.58, 0.85);
+  background-color: $secondary-background-color;
+}
+
+.wrapper--blog:hover {
+  background-color: $hover-background-color;
+}
+
+.blog-size {
+  display: block;
+}
+
+.blog-box > li {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+.list--reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+// blog end //

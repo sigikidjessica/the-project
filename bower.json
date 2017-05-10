@@ -1,0 +1,30 @@
+{
+  "name": "Projekt",
+  "description": "Awesome Project",
+  "main": [
+    "dist/js/app.js",
+    "dist/css/app.scss"
+  ],
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "sass",
+    "js",
+    "gulp"
+  ],
+  "authors": [
+    "Jessica Rietz"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "masonry": "^4.2.0",
+    "jQuery": "^3.2.1"
+  }
+}
