@@ -78,14 +78,14 @@ button :hover {
 
 
 // KOMMENTAR BUTTON START //
-.kommentar-button:hover {
+.comment-button:hover {
   background-color: $primary-color;
   color: $font-color;
   border: 2px solid $font-color;
   transition: background 400ms cubic-bezier(0.5, 0.25, 0.58, 0.85);
 }
 
-.kommentar-button {
+.comment-button {
   color: $primary-color;
   display: inline-block;
   text-decoration: none;
@@ -97,10 +97,8 @@ button :hover {
   background-color: transparent;
 }
 
-.kommentar-button--send {
-  position: absolute;
-  left: 55%;
-  top: 135%;
+.comment-button--send {
+  margin: 20px 0 20px 0;
 }
 // KOMMENTAR BUTTON END//
 

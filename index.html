@@ -8,6 +8,8 @@
     <title>#Projekt - Styleguide</title>
     <link rel="stylesheet" href="dist/css/app.css" type="text/css" media="all" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <!-- SICHTBARER BEREICH START -->
@@ -17,7 +19,6 @@
 
     <!-- NAVIGATION + LOGO START -->
     <header>
-
         <div class="row">
             <a class="logo" href="#">
                 <img alt="Logo Rietz" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/logo_white.png">
@@ -30,17 +31,14 @@
                 <li><a class="button nav-button" href="#">About</a></li>
             </ul>
         </div>
-
     </header>
-
     <!-- NAVIGATION + LOGO END -->
 
     <!-- BLOGPOST START -->
-
     <article class="row blog-size">
 
         <header>
-            <h2 class="article-headline">You think water moves fast?</h2>
+            <h1 class="article-headline">You think water moves fast?</h1>
         </header>
 
         <div>
@@ -53,7 +51,6 @@
         </div>
 
         <footer>
-
             <div class="wrapper mod--tags">
                 <dl class="tag-list">
                     <dt>Tags</dt>
@@ -78,48 +75,84 @@
                     <dd><a class="button tag-button"> 07.04.2017</a></dd>
                 </dl>
             </div>
-
         </footer>
 
     </article>
-
     <!-- BLOGPOST ENDE -->
 
     <!--BLOGPOST KOMMENTAR START -->
-
-    <h2> Hinterlass ein Kommentar :)</h2>
-
     <div>
-        <div class="kommentar-wrapper">
-            <div class="kommentarfeld">
-                <p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
+        <h2> Hinterlass ein Kommentar</h2>
+
+        <div class="comment-name">
+            <div>
+                <input class="comment-name--input" type="text" name="name" id="name" placeholder="Dein Name"/>
             </div>
         </div>
 
-        <div class="kommentar-name">
-            <div class="kommentar-name--padding">
-                <p>Gustav Gans</p>
+        <div class="comment-email">
+            <div>
+                <input class="comment-email--input" type="email" name="email" id="email" placeholder="Deine E-Mail-Adresse" />
             </div>
         </div>
 
-        <div class="kommentar-email">
-            <div class="kommentar-email--padding">
-                <p>Gustav@gustav-ist-toll.de</p>
+        <div class="comment-wrapper">
+            <div class="comment_field">
+                <textarea class="comment-field--text" name="comment" id="comment" placeholder="Deine Nachricht"></textarea>
             </div>
         </div>
 
-        <div class="kommentar-button--send">
-            <a class="kommentar-button" href="#">senden :)</a>
+        <div class="comment-button--send">
+            <a class="comment-button" href="#">senden :)</a>
         </div>
 
     </div>
     <!-- BLOGPOST KOMMENTAR END -->
 
-    <h2> Aktuelle Einträge </h2>
-
+    <!-- AEHNLICHE BEITRAEGE START -->
     <section class="mod mod-blog">
+        <h2> Ähnliche Beiträge</h2>
         <ul class="list--reset blog-box">
-            <!-- UEBERSICHT BLOG START -->
+            <li>
+                <article class="wrapper--blog">
+                    <div class="image--wrapper">
+                        <img class="img-blog" alt="Ein-Hund" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/kleiner-hund.jpg">
+                    </div>
+                    <div class="blog-button--wrapper">
+                        <p>Normally, both your - 05.01.2017</p>
+                    </div>
+                </article>
+            </li>
+
+            <li>
+                <article class="wrapper--blog">
+                    <div class="image--wrapper">
+                        <img class="img-blog" alt="Ein-Hund" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/kleiner-hund.jpg">
+                    </div>
+                    <div class="blog-button--wrapper">
+                        <p>This case - 11.01.2017</p>
+                    </div>
+                </article>
+            </li>
+
+            <li>
+                <article class="wrapper--blog">
+                    <div class="image--wrapper">
+                        <img class="img-blog" alt="Ein-Hund" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/kleiner-hund.jpg">
+                    </div>
+                    <div class="blog-button--wrapper">
+                        <p>Look! Look! - 13.10.2016</p>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </section>
+    <!-- AEHNLICHE BEITRAEGE END -->
+
+    <!-- UEBERSICHT BLOG START -->
+    <section class="mod mod-blog">
+        <h2> Aktuelle Einträge </h2>
+        <ul class="list--reset blog-box">
             <li>
                 <article class="wrapper--blog">
                     <div class="image--wrapper">
@@ -173,39 +206,70 @@
                     </div>
                 </article>
             </li>
-            <!-- UEBERSICHT BLOG END -->
         </ul>
     </section>
+    <!-- UEBERSICHT BLOG END -->
 
     <!-- PORTFOLIO START -->
-
     <h2> Portfolio </h2>
 
-    <div class="grid">
-        <div class="grid-item">
-            <img alt="Den-Schaf" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/schaf.jpg">
+    <div class="grid--wrapper">
+
+        <div class="grid">
+            <div class="grid-sizer"></div>
+
+            <div class="grid-item">
+                <div class="grid-item--inner">
+                    <img alt="Ein-Hund" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/kleiner-hund.jpg">
+                </div>
+            </div>
+            <div class="grid-item grid-item--height2">
+                <div class="grid-item--inner">
+                    <img alt="Ein-Schaf" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/schaf.jpg">
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item--inner">
+                    <img alt="Den-Schaf" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/den-schaf.jpg">
+                </div>
+            </div>
+            <div class="grid-item grid-item--height2">
+                <div class="grid-item--inner">
+                    <img alt="Eine-Katze" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/katze-hochformat.jpg">
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item--inner">
+                    <img alt="Boo-Hund" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/boo-suesser-hund.jpg">
+                </div>
+            </div>
+            <div class="grid-item grid-item--width2">
+                <div class="grid-item--inner">
+                    <img alt="Ein-Hund" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/kleiner-hund.jpg">
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item--inner">
+                    <img alt="Ein-Schaf" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/schaf.jpg">
+                </div>
+            </div>
+            <div class="grid-item grid-item--height2">
+                <div class="grid-item--inner">
+                    <img alt="Eine-Katze" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/katze-hochformat.jpg">
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item--inner">
+                    <img alt="Den-Schaf" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/den-schaf.jpg">
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item--inner">
+                    <img alt="Ein-Hund" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/kleiner-hund.jpg">
+                </div>
+            </div>
         </div>
-        <div class="grid-item grid-item--height2">
-            <img alt="Eine-Katze" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/schaf.jpg">
-        </div>
-        <div class="grid-item">
-            <img alt="Den-Schaf" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/schaf.jpg">
-        </div>
-        <div class="grid-item grid-item--height2">
-            <img alt="Eine-Katze" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/katze-hochformat.jpg">
-        </div>
-        <div class="grid-item">
-            <img alt="Den-Schaf" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/schaf.jpg">
-        </div>
-        <div class="grid-item grid-item--width2">
-            <img alt="Ein-Schaf" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/schaf.jpg">
-        </div>
-        <div class="grid-item">
-            <img alt="Baby-Hund" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/schaf.jpg">
-        </div>
-        <div class="grid-item grid-item--height2">
-            <img alt="Eine-Katze" src="/Users/Rietz/Desktop/%23Projekt/Styleguide/Bilder/katze-hochformat.jpg">
-        </div>
+
     </div>
 
     <!-- PORTFOLIO END -->

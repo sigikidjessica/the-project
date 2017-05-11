@@ -1,11 +1,35 @@
-.grid-item {
-   width: 400px;
- }
-
-.grid-item--width2 {
-  width: 400px;
+.grid--wrapper {
+  overflow: hidden;
 }
 
-.grid-item--height2 {
-  height: 400px;
+.grid {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.grid-sizer,
+.grid-item {
+   width: 50%;
+}
+
+.grid-item--width2 {
+  // width: 50%;
+}
+
+.grid-item--inner {
+  padding: 10px;
+}
+
+@media screen and (min-width: 560px) {
+
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+
 }
