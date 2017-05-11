@@ -1,17 +1,3 @@
-$headline-color: $primary-color !default;
-$headline-secondary-color: $secondary-color !default;
-
-// Headline:
-$headline-size: 48px !default;
-$headline-font: 'blackjack' !default;
-
-// Text:
-$text-size: 16px !default;
-$primary-font: 'KING' !default;
-$font-test: 'Pacifico' !default;
-$text-color: $font-color !default;
-
-
 // Schriftarten:
 @include font-face ('Amarillo', '../fonts/Amarillo');
 @include font-face ('KING', '../fonts/KING');
@@ -25,6 +11,7 @@ body {
   font-size: $text-size;
 }
 
+// HEADLINE START //
 h1 {
   color: $headline-color;
   font-size: 50px;
@@ -66,6 +53,7 @@ h6 {
   font-family: $headline-font;
   margin: 10px;
 }
+// HEADLINE END //
 
 a {
   color: $headline-secondary-color;
@@ -84,8 +72,8 @@ p {
   background: #ffffb8;
 }
 
-// blog-uebersicht //
 
+// UEBERSICHT BLOG START//
 .blog-header {
   text-align: center;
 
@@ -93,3 +81,4 @@ p {
     margin: 10px;
   }
 }
+// UEBERSICHT BLOG END //

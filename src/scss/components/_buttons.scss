@@ -16,7 +16,7 @@ button :hover {
   background-color: $marker-color;
 }
 
-// nav button start //
+// NAV BUTTON START //
 .nav-button {
   padding: 10px 65px;
   transition: background 400ms cubic-bezier(0.5, 0.25, 0.58, 0.85);
@@ -36,34 +36,18 @@ button :hover {
     margin: 0 10px;
   }
 }
-// nav button end //
+// NAV BUTTON END//
 
-//blog button start //
-.blog-button {
-  text-align: center;
-}
 
-.blog-button:hover {
-  background-color: $secondary-background-color;
-  color: $font-color;
-  transition: background 400ms cubic-bezier(0.5, 0.25, 0.58, 0.85);
-}
-
-.blog-button--wrapper {
-  text-align: center;
-  padding: 0 0 20px 0;
-}
-
-// blog button end //
-
-.article-button {
+// BLOGPOST TAG BUTTON START //
+.tag-button {
   transition: background 400ms cubic-bezier(0.5, 0.25, 0.58, 0.85);
   color: $headline-secondary-color;
   border: 2px solid $headline-secondary-color;
   font-size: 14px;
 }
 
-.article-button:hover {
+.tag-button:hover {
   background-color: $headline-secondary-color;
   color: $font-color;
   border-color: $font-color;
@@ -90,3 +74,50 @@ button :hover {
     margin-right: 10px;
   }
 }
+// BLOGPOST TAG BUTTON END //
+
+
+// KOMMENTAR BUTTON START //
+.kommentar-button:hover {
+  background-color: $primary-color;
+  color: $font-color;
+  border: 2px solid $font-color;
+  transition: background 400ms cubic-bezier(0.5, 0.25, 0.58, 0.85);
+}
+
+.kommentar-button {
+  color: $primary-color;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid $primary-color;
+  border-radius: 30px;
+  padding: 10px 35px;
+  font-family: $primary-font;
+  font-size: 22px;
+  background-color: transparent;
+}
+
+.kommentar-button--send {
+  position: absolute;
+  left: 55%;
+  top: 135%;
+}
+// KOMMENTAR BUTTON END//
+
+
+// UEBERSICHT BLOG BUTTON START //
+.blog-button {
+  text-align: center;
+}
+
+.blog-button:hover {
+  background-color: $secondary-background-color;
+  color: $font-color;
+  transition: background 400ms cubic-bezier(0.5, 0.25, 0.58, 0.85);
+}
+
+.blog-button--wrapper {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+// UEBERSICHT BLOG BUTTON END //

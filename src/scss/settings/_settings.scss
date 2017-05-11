@@ -1,13 +1,28 @@
-// Farben
-$primary-color: #a9dca7;
-$secondary-color: #4fb7b7;
-$marker-color: #cccc77;
+// Farben:
+$primary-color: #a9dca7 !default;
+$secondary-color: #4fb7b7 !default;
+$marker-color: #cccc77 !default;
 
-$body-font-family: King;
+// Farben: Hintergrund
+$background-color: #191919 !default;
+$secondary-background-color: #2a2a2a !default;
 
-// Headline
-$headline-size: 38px;
+// Farben: Button
+$hover-background-color: #526051 !default;
 
-//Text
-$text-size: 16px;
-$font-color: #ffffff;
+// Farben: Text
+$font-color: #ffffff !default;
+$marked-text: $secondary-color !default;
+
+// Headline:
+$headline-size: 48px !default;
+$headline-font: 'blackjack' !default;
+
+$headline-color: $primary-color !default;
+$headline-secondary-color: $secondary-color !default;
+
+// Text:
+$text-size: 16px !default;
+$primary-font: 'KING' !default;
+$font-test: 'Pacifico' !default;
+$text-color: $font-color !default;
