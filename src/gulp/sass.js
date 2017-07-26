@@ -15,7 +15,7 @@ function stylesTask() {
             //.pipe(rename({suffix: '.min'}))
             .pipe(autoprefixer({
                 browsers: ['last 5 versions'],
-                cascade: false
+                cascade: true
             }))
             .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest(destinationPath + 'css'))

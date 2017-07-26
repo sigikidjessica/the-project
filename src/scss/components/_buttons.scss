@@ -109,7 +109,7 @@ button :hover {
 }
 
 .blog-button:hover {
-  background-color: $secondary-background-color;
+  background-color: $marker-color;
   color: $font-color;
   transition: background 400ms cubic-bezier(0.5, 0.25, 0.58, 0.85);
 }
@@ -117,5 +117,9 @@ button :hover {
 .blog-button--wrapper {
   text-align: center;
   padding: 0 0 20px 0;
+}
+
+.blog-button-date {
+ color: $secondary-color;
 }
 // UEBERSICHT BLOG BUTTON END //

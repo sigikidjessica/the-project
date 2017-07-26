@@ -3,7 +3,7 @@ body {
 }
 
 main {
-  max-width: 1300px;
+  max-width: 1600px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -35,28 +35,12 @@ img {
 // BLOGPOST END //
 
 
-// BLOG KOMMENTAR START //
+// BLOG KOMMENTARFELD START //
 .comment-wrapper {
   border-style: solid;
   border-radius: 50px;
   width: 50%;
-}
-
-.comment_field {
-  padding: 10px 20px 10px 20px;
-}
-
-.comment-field--text {
-  border-style: none;
-  overflow: auto;
-  resize: none;
-  outline: none;
-  width: 590px;
-  height: 250px;
-  background-color: $background-color;
-  font-family: $primary-font;
-  color: $font-color;
-  font-size: $text-size;
+  color: $primary-color;
 }
 
 .comment-name {
@@ -65,6 +49,7 @@ img {
   width: 20%;
   margin: 20px 0 20px 0;
   padding: 10px 45px 10px 17px;
+  color: $primary-color;
 }
 
 .comment-name--input {
@@ -75,7 +60,12 @@ img {
   background-color: $background-color;
   font-family: $primary-font;
   font-size: $text-size;
-  color: $font-color;
+  color: $primary-color;
+  width: 290px;
+
+  &::placeholder {
+    color: $hover-background-color;
+  }
 }
 
 .comment-email {
@@ -84,6 +74,7 @@ img {
   width: 20%;
   margin: 20px 0 20px 0;
   padding: 10px 45px 10px 17px;
+  color: $primary-color;
 }
 
 .comment-email--input {
@@ -94,14 +85,43 @@ img {
   background-color: $background-color;
   font-family: $primary-font;
   font-size: $text-size;
-  color: $font-color;
+  color: $primary-color;
+  width: 290px;
+
+  &::placeholder {
+    color: $hover-background-color;
+  }
 }
-// BLOG KOMMENTAR END //
+
+.comment_field {
+  padding: 10px 20px 10px 20px;
+  color: $primary-color;
+}
+
+.comment-field--text {
+  border-style: none;
+  overflow: auto;
+  resize: none;
+  outline: none;
+  width: 620px;
+  height: 250px;
+  background-color: $background-color;
+  font-family: $primary-font;
+  color: $primary-color;
+  font-size: $text-size;
+
+  &::placeholder {
+    color: $hover-background-color;
+  }
+}
+
+// BLOG KOMMENTARFELD END //
 
 
 // UEBERSICHT BLOG START //
 .image--wrapper {
   overflow: hidden;
+  background-color: $marker-color;
 }
 
 .inner-content {
@@ -118,7 +138,8 @@ img {
   }
 
   &:hover {
-    background-color: $hover-background-color;
+    // background-color: $secondary-background-color;
+    cursor: pointer;
 
     img {
       filter: opacity(.6);

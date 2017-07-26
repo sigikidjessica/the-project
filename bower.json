@@ -25,6 +25,7 @@
   ],
   "dependencies": {
     "masonry": "^4.2.0",
-    "jQuery": "^3.2.1"
+    "jQuery": "2.2.4",
+    "swipebox": "^1.4.4"
   }
 }
